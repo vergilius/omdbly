@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>OMDBLY - your guide to your next video experience</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎞</text></svg>" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      /* small chunk of global styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {text-decoration: none;}
+      .omdbly-entry {
+        width: 100vw;
+        height: 100vh;
+        background: #fb5464;
+        background: linear-gradient(0, #fb5464 25%, #1ab3fb 75%);
+      }
+      .omdbly-entry__loading {
+        position: fixed;
+        width: 100%;
+        bottom: 12px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="omdbly-entry">
+        <div class="omdbly-entry__loading">
+          Loading... Application works only with JavaScript enabled.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
